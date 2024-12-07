@@ -1,6 +1,6 @@
 function checkForSpam(message) {
   const newMessage = message.toLowerCase();
-  const hasMySymbol = newMessage.includes("spam", "sale");
+  const hasMySymbol = newMessage.includes("spam") || newMessage.includes("sale");
   if (hasMySymbol) {
     return true;
   } else {
